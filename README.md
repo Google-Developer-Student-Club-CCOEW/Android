@@ -54,4 +54,4 @@ git push origin <branch-name>
 
 **8.** Create a [Pull Request/PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) !
 
-**9.** **Congratulations!** Sit and relax, you've made your contribution to Android of GDSC Cummins.
+**9.** **Congratulations!** Sit and relax, you've made your contribution to Android repository of GDSC Cummins.
