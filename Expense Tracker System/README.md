@@ -28,3 +28,15 @@ They can also see the graph of their income. This graph is a pie-chart that show
 The expense tab shows all the expenses of the users. You can also update it.
 
 They can also see the graph of their expenses. This graph is a pie-chart which shows all category-wise spending to the user.
+
+
+<br>
+Note: This app would be using Jetpack compose. 
+<br>
+Resources :
+<br>
+https://developer.android.com/jetpack/compose
+
+https://developer.android.com/courses/android-basics-compose/course
+
+https://www.geeksforgeeks.org/basics-of-jetpack-compose-in-android/
