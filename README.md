@@ -1,5 +1,14 @@
 # Android
 
+## How to contribute
+
+- Go to the issue section
+- Find a issue of your interest and knowledge
+- Comment on the issue with your proposal
+- Start working on the issue once the issue is assigned to you
+- Happy Contributing!
+
+
 
 ![GDSC](https://user-images.githubusercontent.com/56436897/193326497-f15493fe-c12e-455f-b86c-28fcf539e7a7.png)
 
