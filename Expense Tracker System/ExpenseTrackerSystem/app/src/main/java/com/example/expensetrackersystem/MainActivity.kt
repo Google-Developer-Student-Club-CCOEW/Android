@@ -18,26 +18,149 @@ class MainActivity : ComponentActivity() {
         setContent {
             ExpenseTrackerSystemTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
+                Surface(modifier = Modifier.fillMaxSize()) {
+                    Scaffold(
+                        topBar = {
+                            TopAppBar(
+                                title = {
+                                    Text(text = "Welcome to Expense Tracker System")
+                                },
+
+
+                            )
+
+
+                        },
+
+                    ){
+
+                    }
+
                 }
+
+                instru(applicationContext)
+                //call loginscreen here
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
+fun instru(context:Context) {
+    androidx.compose.foundation.layout.Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = androidx.compose.ui.Alignment.Center
+    )
+    {
+        androidx.compose.foundation.layout.Box(
+            modifier = Modifier
+                .fillMaxSize(),
+            //.background(Color.White),
+            contentAlignment = androidx.compose.ui.Alignment.TopCenter
+        ) {
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    ExpenseTrackerSystemTheme {
-        Greeting("Android")
+        }
+        androidx.compose.foundation.layout.Column(
+            horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally,
+            verticalArrangement = androidx.compose.foundation.layout.Arrangement.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxWidth(0.60f)
+                .padding(10.dp)
+
+        ) {
+            Column() {
+
+
+            Text(
+                text = "1. Category Trends and Budget",
+                modifier = Modifier.fillMaxWidth(),
+                color = Color.Red,
+                fontWeight = FontWeight.Bold,
+                fontSize = 20.sp
+
+            )}
+            Column() {
+
+                Text(
+                    text = "Insightful trends and budget alerts for expense categories",
+                    modifier = Modifier,
+                    color = Color.White
+                )
+            }
+            Spacer(modifier = Modifier.padding(10.dp))
+            Column() {
+                Text(
+                    text = "2. Add Your expenses",
+                    modifier = Modifier.fillMaxWidth(),
+                    color = Color.Red,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp
+                )
+            }
+            Column() {
+                Text(text = "Quickly add your cash expenses using robust and simple form",
+                    modifier = Modifier,
+                    color = Color.White)
+            }
+            Spacer(modifier = Modifier.padding(10.dp))
+            Column {
+                Text(
+                    text = "3. Add Your income",
+                    modifier = Modifier.fillMaxWidth(),
+                    color = Color.Red,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp
+                )
+            }
+            //  Spacer(modifier = Modifier.padding(10.dp))
+
+            Column() {
+                Text(text ="Quickly add your income and the categories to it",
+                    modifier = Modifier,
+                    color = Color.White)
+            }
+            Spacer(modifier = Modifier.padding(10.dp))
+            Column() {
+                Text(
+                    text = "4. Quick Searches",
+                    modifier = Modifier.fillMaxWidth(),
+                    color = Color.Red,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp
+                )
+            }
+            Column() {
+                Text(text = "Search and sort through all your transactions at one single place",
+                    modifier = Modifier,
+                    color = Color.White)
+            }
+            Spacer(modifier = Modifier.padding(80.dp))
+
+
+            Button(
+                onClick = {
+                    Toast.makeText(context, "Welcome!!", Toast.LENGTH_SHORT).show()
+
+                },
+
+                modifier = Modifier
+                    .fillMaxWidth(8f)
+                    .height(50.dp)
+
+            ) {
+                Text(text = "NEXT")
+            }
+            Spacer(modifier = Modifier.padding(20.dp))
+
+
+
+
+
+
+        }
     }
 }
+
+
+
