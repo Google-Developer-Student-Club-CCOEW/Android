@@ -12,8 +12,8 @@ val Typography = Typography(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp
-    )
-    /* Other default text styles to override
+    ),
+    
     button = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.W500,
@@ -23,6 +23,17 @@ val Typography = Typography(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp
-    )
-    */
+    ),
+    
+subtitle1 = TextStyle(
+    fontWeight = FontWeight.W700,
+    fontFamily = FontFamily.SansSerif,
+    fontSize = 12.sp
+),
+h1=TextStyle(
+fontWeight=FontWeight.Medium,
+fontSize=20.sp,
+letterSpacing=0.15.sp
+    
+)
 )
